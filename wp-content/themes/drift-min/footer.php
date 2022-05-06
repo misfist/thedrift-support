@@ -78,11 +78,8 @@ if( 'Style-2' === $footer_style ) : ?>
 						</div>	
 					</div>
 
-
 					<div class="col-md-2 footerNewSocials">
-						
 						<?php get_template_part( 'template-parts/footer/social-links' ); ?>
-
 					</div>
 			</div>
 		</div>
