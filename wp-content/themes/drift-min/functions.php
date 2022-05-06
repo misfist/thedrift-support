@@ -127,6 +127,8 @@ function twentyseventeen_setup() {
 	// Load default block styles.
 	add_theme_support( 'wp-block-styles' );
 
+	add_theme_support( 'align-wide' );
+
 	// Add support for responsive embeds.
 	add_theme_support( 'responsive-embeds' );
 }
