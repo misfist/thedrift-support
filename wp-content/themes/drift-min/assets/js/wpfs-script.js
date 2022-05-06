@@ -48,9 +48,21 @@
         fieldNodes.each( function( index, value ) {
             let $input = $( this ).find( 'input' );
             let $label = $( this ).find( '.wpfs-form-check-label' );
-            let $description =  $input.data( 'wpfs-amount-description' );
+            let $currency = $input.data( 'wpfs-currency' );
+            let $amount = $input.val();
+            let $planName =  $input.data( 'wpfs-product-name' );
 
-            $label.html( $description );
+            let amount = new Intl.NumberFormat( 'en-US', { 
+                style: 'currency', 
+                currency: $currency,
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            } ).format( $amount );
+
+            let $description = '<span class="constrained">' + $planName + '</span>';
+            let $price = '<strong>' + amount + '</strong>';
+
+            $label.html( $description + $price );
         } );
     }
 
