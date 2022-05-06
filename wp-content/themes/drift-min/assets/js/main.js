@@ -155,14 +155,14 @@ function fixQuoteSpacing() {
     /* On scroll header sticky starts code */
 
 
-    var sectionID = $(".sectionID").attr("data-value");
-    setTimeout(function() {
-        if (sectionID != "") {
-            $('html, body').animate({
-                scrollTop: $("#" + sectionID).offset().top
-            }, 500);
-        }
-    }, 1000);
+    // var sectionID = $(".sectionID").attr("data-value");
+    // setTimeout(function() {
+    //     if (sectionID != "") {
+    //         $('html, body').animate({
+    //             scrollTop: $("#" + sectionID).offset().top
+    //         }, 500);
+    //     }
+    // }, 1000);
 
     const mobMenuIconEl = document.querySelector(".openMobMenuIcon");
     const mobMenuTarget = document.querySelector("#myMobileNav");
