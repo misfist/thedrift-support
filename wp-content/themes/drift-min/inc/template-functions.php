@@ -125,3 +125,21 @@ function twentyseventeen_panel_count() {
 function twentyseventeen_is_frontpage() {
 	return ( is_front_page() && ! is_home() );
 }
+
+/**
+ * Add Items to Mobile Nav Menu
+ * 
+ * @link https://developer.wordpress.org/reference/hooks/wp_nav_menu_items/
+ *
+ * @param string $items
+ * @param obj $args
+ * @return string $items
+ */
+function drift_wp_nav_menu_items( $items, $args ) {
+    if ( $args->theme_location == 'mobile' ) {
+        $items .= '<li class="mob-search"><a><i class="fa fa-search"></i></a></li>';
+		$items .= sprintf( '<div class="drift_searchForm">%s</div>', get_search_form() );
+    }
+    return $items;
+}
+// add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
