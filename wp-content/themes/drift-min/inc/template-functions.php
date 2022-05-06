@@ -81,7 +81,7 @@ add_filter( 'body_class', 'twentyseventeen_body_classes' );
  * @return string $title
  */
 function drift_the_title( $title, $post_id ) {
-	if( is_admin() ) {
+	if( is_admin() || ! in_the_loop() ) {
 		return $title;
 	}
 	if( ( $subtitle = get_post_meta( $post_id, 'post_subsitle', true ) ) || ( $subtitle = get_post_meta( $post_id, 'subtitle', true ) ) || ( $subtitle = get_post_meta( $post_id, 'current_issue_subtitle', true ) ) ) {
