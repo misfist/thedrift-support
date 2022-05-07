@@ -580,3 +580,1010 @@ object {
 .rtl .mejs-offscreen {
 	right: -10000px;
 }
+
+
+
+
+/*
+Theme Name: Twenty Seventeen
+Description: Used to style blocks in the editor.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 General Typography
+2.0 General Block Settings
+3.0 Blocks - Common Blocks
+4.0 Blocks - Formatting
+5.0 Blocks - Layout Elements
+6.0 Blocks - Widgets
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 General Typography
+--------------------------------------------------------------*/
+
+.edit-post-visual-editor .editor-block-list__block,
+.editor-default-block-appender textarea.editor-default-block-appender__content {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.editor-default-block-appender textarea.editor-default-block-appender__content {
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+.edit-post-visual-editor .editor-block-list__block {
+	color: #333;
+}
+
+.editor-post-title__block .editor-post-title__input {
+	color: #333;
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-size: 20px;
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+
+@media screen and (min-width: 30em) {
+
+	.edit-post-visual-editor .editor-block-list__block {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.editor-post-title__block .editor-post-title__input {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+
+	.edit-post-visual-editor .editor-block-list__block h1 {
+		font-size: 30px;
+		font-size: 1.875rem;
+	}
+
+	.edit-post-visual-editor .editor-block-list__block h2 {
+		font-size: 26px;
+		font-size: 1.625rem;
+	}
+
+	.edit-post-visual-editor .editor-block-list__block h3 {
+		font-size: 22px;
+		font-size: 1.375rem;
+	}
+
+	.edit-post-visual-editor .editor-block-list__block h4 {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.edit-post-visual-editor .editor-block-list__block h5 {
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+
+	.edit-post-visual-editor .editor-block-list__block h6 {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+
+	.edit-post-visual-editor .editor-block-list__block {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+
+	.editor-rich-text__tinymce.mce-content-body {
+		line-height: 1.5;
+	}
+}
+
+/* Typography for Arabic Font */
+
+html[lang="ar"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="ary"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="azb"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="fa-IR"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="haz"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="ps"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="ur"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: Tahoma, Arial, sans-serif;
+}
+
+html[lang="ar"] .edit-post-visual-editor h1,
+html[lang="ar"] .edit-post-visual-editor h2,
+html[lang="ar"] .edit-post-visual-editor h3,
+html[lang="ar"] .edit-post-visual-editor h4,
+html[lang="ar"] .edit-post-visual-editor h5,
+html[lang="ar"] .edit-post-visual-editor h6,
+html[lang="ary"] .edit-post-visual-editor h1,
+html[lang="ary"] .edit-post-visual-editor h2,
+html[lang="ary"] .edit-post-visual-editor h3,
+html[lang="ary"] .edit-post-visual-editor h4,
+html[lang="ary"] .edit-post-visual-editor h5,
+html[lang="ary"] .edit-post-visual-editor h6,
+html[lang="azb"] .edit-post-visual-editor h1,
+html[lang="azb"] .edit-post-visual-editor h2,
+html[lang="azb"] .edit-post-visual-editor h3,
+html[lang="azb"] .edit-post-visual-editor h4,
+html[lang="azb"] .edit-post-visual-editor h5,
+html[lang="azb"] .edit-post-visual-editor h6,
+html[lang="fa-IR"] .edit-post-visual-editor h1,
+html[lang="fa-IR"] .edit-post-visual-editor h2,
+html[lang="fa-IR"] .edit-post-visual-editor h3,
+html[lang="fa-IR"] .edit-post-visual-editor h4,
+html[lang="fa-IR"] .edit-post-visual-editor h5,
+html[lang="fa-IR"] .edit-post-visual-editor h6,
+html[lang="haz"] .edit-post-visual-editor h1,
+html[lang="haz"] .edit-post-visual-editor h2,
+html[lang="haz"] .edit-post-visual-editor h3,
+html[lang="haz"] .edit-post-visual-editor h4,
+html[lang="haz"] .edit-post-visual-editor h5,
+html[lang="haz"] .edit-post-visual-editor h6,
+html[lang="ps"] .edit-post-visual-editor h1,
+html[lang="ps"] .edit-post-visual-editor h2,
+html[lang="ps"] .edit-post-visual-editor h3,
+html[lang="ps"] .edit-post-visual-editor h4,
+html[lang="ps"] .edit-post-visual-editor h5,
+html[lang="ps"] .edit-post-visual-editor h6,
+html[lang="ur"] .edit-post-visual-editor h1,
+html[lang="ur"] .edit-post-visual-editor h2,
+html[lang="ur"] .edit-post-visual-editor h3,
+html[lang="ur"] .edit-post-visual-editor h4,
+html[lang="ur"] .edit-post-visual-editor h5,
+html[lang="ur"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+}
+
+/* Typography for Chinese Font */
+
+html[lang^="zh-"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "PingFang TC", "Helvetica Neue", Helvetica, STHeitiTC-Light, Arial, sans-serif;
+}
+
+html[lang="zh-CN"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "PingFang SC", "Helvetica Neue", Helvetica, STHeitiSC-Light, Arial, sans-serif;
+}
+
+html[lang^="zh-"] .edit-post-visual-editor h1,
+html[lang^="zh-"] .edit-post-visual-editor h2,
+html[lang^="zh-"] .edit-post-visual-editor h3,
+html[lang^="zh-"] .edit-post-visual-editor h4,
+html[lang^="zh-"] .edit-post-visual-editor h5,
+html[lang^="zh-"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+}
+
+/* Typography for Cyrillic Font */
+
+html[lang="bg-BG"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="ru-RU"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="uk"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+}
+
+html[lang="bg-BG"] .edit-post-visual-editor h1,
+html[lang="bg-BG"] .edit-post-visual-editor h2,
+html[lang="bg-BG"] .edit-post-visual-editor h3,
+html[lang="bg-BG"] .edit-post-visual-editor h4,
+html[lang="bg-BG"] .edit-post-visual-editor h5,
+html[lang="bg-BG"] .edit-post-visual-editor h6,
+html[lang="ru-RU"] .edit-post-visual-editor h1,
+html[lang="ru-RU"] .edit-post-visual-editor h2,
+html[lang="ru-RU"] .edit-post-visual-editor h3,
+html[lang="ru-RU"] .edit-post-visual-editor h4,
+html[lang="ru-RU"] .edit-post-visual-editor h5,
+html[lang="ru-RU"] .edit-post-visual-editor h6,
+html[lang="uk"] .edit-post-visual-editor h1,
+html[lang="uk"] .edit-post-visual-editor h2,
+html[lang="uk"] .edit-post-visual-editor h3,
+html[lang="uk"] .edit-post-visual-editor h4,
+html[lang="uk"] .edit-post-visual-editor h5,
+html[lang="uk"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+/* Typography for Devanagari Font */
+
+html[lang="bn-BD"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="hi-IN"] .edit-post-visual-editor .editor-block-list__block,
+html[lang="mr-IN"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: Arial, sans-serif;
+}
+
+html[lang="bn-BD"] .edit-post-visual-editor h1,
+html[lang="bn-BD"] .edit-post-visual-editor h2,
+html[lang="bn-BD"] .edit-post-visual-editor h3,
+html[lang="bn-BD"] .edit-post-visual-editor h4,
+html[lang="bn-BD"] .edit-post-visual-editor h5,
+html[lang="bn-BD"] .edit-post-visual-editor h6,
+html[lang="hi-IN"] .edit-post-visual-editor h1,
+html[lang="hi-IN"] .edit-post-visual-editor h2,
+html[lang="hi-IN"] .edit-post-visual-editor h3,
+html[lang="hi-IN"] .edit-post-visual-editor h4,
+html[lang="hi-IN"] .edit-post-visual-editor h5,
+html[lang="hi-IN"] .edit-post-visual-editor h6,
+html[lang="mr-IN"] .edit-post-visual-editor h1,
+html[lang="mr-IN"] .edit-post-visual-editor h2,
+html[lang="mr-IN"] .edit-post-visual-editor h3,
+html[lang="mr-IN"] .edit-post-visual-editor h4,
+html[lang="mr-IN"] .edit-post-visual-editor h5,
+html[lang="mr-IN"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+}
+
+/* Typography for Greek Font */
+
+html[lang="el"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[lang="el"] .edit-post-visual-editor h1,
+html[lang="el"] .edit-post-visual-editor h2,
+html[lang="el"] .edit-post-visual-editor h3,
+html[lang="el"] .edit-post-visual-editor h4,
+html[lang="el"] .edit-post-visual-editor h5,
+html[lang="el"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+/* Typography for Gujarati Font */
+
+html[lang="gu-IN"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: Arial, sans-serif;
+}
+
+html[lang="gu-IN"] .edit-post-visual-editor h1,
+html[lang="gu-IN"] .edit-post-visual-editor h2,
+html[lang="gu-IN"] .edit-post-visual-editor h3,
+html[lang="gu-IN"] .edit-post-visual-editor h4,
+html[lang="gu-IN"] .edit-post-visual-editor h5,
+html[lang="gu-IN"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+}
+
+/* Typography for Hebrew Font */
+
+html[lang="he-IL"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "Arial Hebrew", Arial, sans-serif;
+}
+
+html[lang="he-IL"] .edit-post-visual-editor h1,
+html[lang="he-IL"] .edit-post-visual-editor h2,
+html[lang="he-IL"] .edit-post-visual-editor h3,
+html[lang="he-IL"] .edit-post-visual-editor h4,
+html[lang="he-IL"] .edit-post-visual-editor h5,
+html[lang="he-IL"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+}
+
+/* Typography for Japanese Font */
+
+html[lang="ja"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "Hiragino Kaku Gothic Pro", Meiryo, sans-serif;
+}
+
+html[lang="ja"] .edit-post-visual-editor h1,
+html[lang="ja"] .edit-post-visual-editor h2,
+html[lang="ja"] .edit-post-visual-editor h3,
+html[lang="ja"] .edit-post-visual-editor h4,
+html[lang="ja"] .edit-post-visual-editor h5,
+html[lang="ja"] .edit-post-visual-editor h6 {
+	font-weight: 700;
+}
+
+/* Typography for Korean font */
+
+html[lang="ko-KR"] .edit-post-visual-editor .editor-block-list__block {
+	font-family: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", Dotum, sans-serif;
+}
+
+html[lang="ko-KR"] .edit-post-visual-editor h1,
+html[lang="ko-KR"] .edit-post-visual-editor h2,
+html[lang="ko-KR"] .edit-post-visual-editor h3,
+html[lang="ko-KR"] .edit-post-visual-editor h4,
+html[lang="ko-KR"] .edit-post-visual-editor h5,
+html[lang="ko-KR"] .edit-post-visual-editor h6 {
+	font-weight: 600;
+}
+
+/* Typography for Thai Font */
+
+html[lang="th"] .edit-post-visual-editor .editor-block-list__block {
+	line-height: 1.8;
+	font-family: "Sukhumvit Set", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html[lang="th"] .edit-post-visual-editor h1,
+html[lang="th"] .edit-post-visual-editor h2,
+html[lang="th"] .edit-post-visual-editor h3,
+html[lang="th"] .edit-post-visual-editor h4,
+html[lang="th"] .edit-post-visual-editor h5,
+html[lang="th"] .edit-post-visual-editor h6 {
+	line-height: 1.65;
+	font-family: "Sukhumvit Set", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Remove letter-spacing for all non-latin alphabets */
+
+html[lang="ar"] .edit-post-visual-editor *,
+html[lang="ary"] .edit-post-visual-editor *,
+html[lang="azb"] .edit-post-visual-editor *,
+html[lang="haz"] .edit-post-visual-editor *,
+html[lang="ps"] .edit-post-visual-editor *,
+html[lang^="zh-"] .edit-post-visual-editor *,
+html[lang="bg-BG"] .edit-post-visual-editor *,
+html[lang="ru-RU"] .edit-post-visual-editor *,
+html[lang="uk"] .edit-post-visual-editor *,
+html[lang="bn-BD"] .edit-post-visual-editor *,
+html[lang="hi-IN"] .edit-post-visual-editor *,
+html[lang="mr-IN"] .edit-post-visual-editor *,
+html[lang="el"] .edit-post-visual-editor *,
+html[lang="gu-IN"] .edit-post-visual-editor *,
+html[lang="he-IL"] .edit-post-visual-editor *,
+html[lang="ja"] .edit-post-visual-editor *,
+html[lang="ko-KR"] .edit-post-visual-editor *,
+html[lang="th"] .edit-post-visual-editor * {
+	letter-spacing: 0 !important;
+}
+
+/*--------------------------------------------------------------
+2.0 General Block Settings
+--------------------------------------------------------------*/
+
+/* Main column width */
+
+.editor-styles-wrapper {
+	max-width: 100% !important; /* Override where editor-style.css is affecting this. */
+}
+
+.wp-block {
+	max-width: 674px; /* Based on one-column post width; 644px + 30px to account for padding. */
+}
+
+/* Alignments */
+
+.edit-post-visual-editor .alignleft {
+	margin-right: 1.5em;
+}
+
+.edit-post-visual-editor .alignright {
+	margin-left: 1.5em;
+}
+
+/* Link styles */
+
+.edit-post-visual-editor a,
+.editor-block-list__block a,
+.wp-block-freeform.block-library-rich-text__tinymce a {
+	color: #222;
+}
+
+/* List styles */
+
+.edit-post-visual-editor ul:not(.wp-block-gallery),
+.editor-block-list__block ul:not(.wp-block-gallery),
+.block-library-list ul,
+.edit-post-visual-editor ol,
+.editor-block-list__block ol,
+.block-library-list ol,
+.block-library-list .editor-rich-text__tinymce {
+	margin: 0 0 1.5em 1.5em;
+	padding: 0;
+}
+
+.edit-post-visual-editor ul:not(.wp-block-gallery),
+.editor-block-list__block ul:not(.wp-block-gallery),
+.block-library-list ul {
+	list-style: disc;
+}
+
+.edit-post-visual-editor ol,
+.editor-block-list__block ol,
+.block-library-list ol {
+	list-style: decimal;
+}
+
+.edit-post-visual-editor li > ul:not(.wp-block-gallery),
+.editor-block-list__block li > ul:not(.wp-block-gallery),
+.block-library-list li > ul:not(.wp-block-gallery),
+.edit-post-visual-editor li > ol,
+.editor-block-list__block li > ol,
+.block-library-list li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+.edit-post-visual-editor li,
+.editor-block-list__block li,
+.block-library-list li {
+	margin: 0;
+}
+
+.rtl .edit-post-visual-editor ul:not(.wp-block-gallery),
+.rtl .editor-block-list__block ul:not(.wp-block-gallery),
+.rtl .block-library-list ul,
+.rtl .edit-post-visual-editor ol,
+.rtl .editor-block-list__block ol,
+.rtl .block-library-list ol,
+.rtl .block-library-list .editor-rich-text__tinymce,
+.rtl .edit-post-visual-editor li > ul:not(.wp-block-gallery),
+.rtl .editor-block-list__block li > ul:not(.wp-block-gallery),
+.rtl .block-library-list li > ul:not(.wp-block-gallery),
+.rtl .edit-post-visual-editor li > ol,
+.rtl .editor-block-list__block li > ol,
+.rtl .block-library-list li > ol {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+
+/* Quote styles */
+
+.editor-block-list__block blockquote p {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.editor-block-list__block blockquote.alignright p,
+.editor-block-list__block blockquote.alignleft p {
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+.editor-block-list__block blockquote cite {
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	margin-top: 0.5em;
+}
+
+/* Caption styles*/
+
+[class^="wp-block-"]:not(.wp-block-gallery) figcaption {
+	font-style: italic;
+	margin-bottom: 1.5em;
+	text-align: left;
+}
+
+.rtl [class^="wp-block-"]:not(.wp-block-gallery) figcaption {
+	text-align: right;
+}
+
+/* Code styles */
+
+.wp-block-freeform.block-library-rich-text__tinymce code {
+	background: transparent;
+}
+
+/* Table styles */
+
+.rtl .editor-block-list__block th {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+3.0 Blocks - Common Blocks
+--------------------------------------------------------------*/
+
+/* Paragraph */
+
+.wp-block-paragraph.has-drop-cap:not(:focus)::first-letter {
+	font-size: 5em;
+	margin-top: 0.075em;
+}
+
+.wp-block-paragraph.has-background {
+	padding: 20px 30px;
+}
+
+/* Gallery */
+
+.wp-block-gallery figcaption {
+	font-style: italic;
+}
+
+/* Quote */
+
+.wp-block-quote {
+	color: #666;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-style: italic;
+	line-height: 1.7;
+}
+
+.wp-block-quote:not(.is-large):not(.is-style-large) {
+	border: 0;
+	padding: 0;
+}
+
+.editor-block-list__block .wp-block-quote .wp-block-quote__citation {
+	color: inherit;
+	display: block;
+	font-size: inherit;
+	font-style: normal;
+	font-weight: 600;
+	margin-top: 0.5em;
+}
+
+.wp-block-quote.alignleft,
+.wp-block-quote.alignright {
+	color: #666;
+	width: 48%;
+}
+
+.editor-block-list__block .wp-block-quote.alignleft p,
+.editor-block-list__block .wp-block-quote.alignright p,
+.editor-block-list__block .wp-block-quote.alignleft .wp-block-quote__citation,
+.editor-block-list__block .wp-block-quote.alignright .wp-block-quote__citation {
+	font-size: 13px;
+	font-size: 0.8125rem;
+}
+
+.editor-block-list__block .wp-block-quote.alignleft p:last-of-type,
+.editor-block-list__block .wp-block-quote.alignright p:last-of-type {
+	margin-bottom: 0;
+}
+
+.wp-block-quote.is-large .wp-block-quote__citation,
+.wp-block-quote.is-style-large .wp-block-quote__citation {
+	text-align: right;
+}
+
+.rtl .wp-block-quote.is-large .wp-block-quote__citation,
+.rtl .wp-block-quote.is-style-large .wp-block-quote__citation {
+	text-align: left;
+}
+
+@media screen and (min-width: 30em) {
+	.editor-block-list__block .wp-block-quote.alignleft p,
+	.editor-block-list__block .wp-block-quote.alignright p,
+	.editor-block-list__block .wp-block-quote.alignleft .wp-block-quote__citation,
+	.editor-block-list__block .wp-block-quote.alignright .wp-block-quote__citation,
+	.editor-block-list__block .wp-block-quote footer {
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.editor-block-list__block .wp-block-quote.alignleft p,
+	.editor-block-list__block .wp-block-quote.alignright p,
+	.editor-block-list__block .wp-block-quote.alignleft .wp-block-quote__citation,
+	.editor-block-list__block .wp-block-quote.alignright .wp-block-quote__citation {
+		font-size: 13px;
+		font-size: 0.8125rem;
+	}
+
+	.editor-block-list__block .wp-block-quote.alignleft {
+		margin-left: -17.5%;
+		width: 48%;
+	}
+
+	.editor-block-list__block .wp-block-quote.alignright {
+		margin-right: -17.5%;
+		width: 48%;
+	}
+}
+
+/* File */
+
+.wp-block-file .wp-block-file__textlink {
+	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 1);
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 1px 0 rgba(0, 0, 0, 1);
+}
+
+.wp-block-file .wp-block-file__button {
+	background-color: #222;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	padding: 0.7em 2em;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	white-space: nowrap;
+}
+
+/*--------------------------------------------------------------
+4.0 Blocks - Formatting
+--------------------------------------------------------------*/
+
+/* Code */
+
+.wp-block-code {
+	border: 0;
+	padding: 0;
+}
+
+/* Classic */
+
+.wp-block-freeform.block-library-rich-text__tinymce li,
+.wp-block-freeform.block-library-rich-text__tinymce p {
+	line-height: 1.5;
+}
+
+.wp-block-freeform.block-library-rich-text__tinymce blockquote {
+	border: 0;
+	padding: 0;
+}
+
+/* Pullquote */
+
+.wp-block-pullquote {
+	border: 0;
+}
+
+.wp-block-pullquote.alignleft blockquote > .editor-rich-text p,
+.wp-block-pullquote.alignright blockquote > .editor-rich-text p {
+	font-size: 20px;
+}
+
+
+.wp-block-pullquote .wp-block-pullquote__citation {
+	font-size: inherit;
+	font-weight: 600;
+	text-transform: none;
+}
+
+/* Table */
+
+table.wp-block-table {
+	border-collapse: collapse;
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+table.wp-block-table thead th {
+	border: 0;
+	border-bottom: 2px solid #bbb;
+	padding-bottom: 0.5em;
+}
+
+table.wp-block-table th {
+	padding: 0.4em;
+	text-align: left;
+}
+
+table.wp-block-table tr {
+	border-bottom: 1px solid #eee;
+}
+
+table.wp-block-table th,
+table.wp-block-table td {
+	border: 0;
+	padding: 0.4em;
+}
+
+table.wp-block-table th:first-child,
+table.wp-block-table td:first-child {
+	padding-left: 0;
+}
+
+table.wp-block-table th:last-child,
+table.wp-block-table td:last-child {
+	padding-right: 0;
+}
+
+.wp-block-table__cell-content {
+	padding: 0;
+}
+
+.rtl table.wp-block-table th,
+.rtl table.wp-block-table td {
+	text-align: right;
+}
+
+/*--------------------------------------------------------------
+5.0 Blocks - Layout Elements
+--------------------------------------------------------------*/
+
+/* Separator */
+
+.edit-post-visual-editor .wp-block-separator {
+	border: 0;
+}
+
+/* Buttons */
+
+.wp-block-button .wp-block-button__link {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display: inline-block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	line-height: 1.66;
+	margin-top: 2em;
+	padding: 0.7em 2em;
+	-webkit-transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out;
+	white-space: nowrap;
+}
+
+.wp-block-button .wp-block-button__link[data-is-placeholder-visible="true"] {
+	height: auto;
+}
+
+.wp-block-button__link {
+	background-color: #222;
+	color: #fff;
+}
+
+.is-style-outline .wp-block-button__link {
+	color: #222;
+}
+
+/* Media & Text */
+
+.wp-block-media-text *:last-child {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+6.0 Blocks - Widgets
+--------------------------------------------------------------*/
+
+/* Archives, Categories & Latest Posts */
+
+[data-align="center"] .wp-block-archives ul,
+[data-align="center"] .wp-block-categories ul,
+[data-align="center"] .wp-block-latest-posts ul {
+	list-style-position: inside;
+}
+
+/* Latest Comments */
+
+.editor-block-list__block ol.wp-block-latest-comments > li:before {
+	content: '';
+}
+
+.wp-block-latest-comments article {
+	margin-bottom: 4em;
+}
+
+.wp-block-latest-comments .avatar,
+.wp-block-latest-comments__comment-avatar {
+	border-radius: 0;
+}
+
+.wp-block-latest-comments__comment-meta {
+	font-size: 16px;
+	font-size: 1rem;
+	margin-bottom: 0.4em;
+}
+
+.editor-block-list__block .wp-block-latest-comments__comment-meta a {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	font-weight: 700;
+}
+
+.wp-block-latest-comments__comment-date {
+	color: #767676;
+	font-size: 10px;
+	font-size: 0.625rem;
+	font-weight: 800;
+	letter-spacing: 0.1818em;
+	margin-top: 0.4em;
+	text-transform: uppercase;
+}
+
+.editor-block-list__block .wp-block-latest-comments__comment-excerpt p {
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+
+/* Latest Posts */
+
+.edit-post-visual-editor .wp-block-latest-posts.is-grid {
+	list-style: none;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+:root{
+    --color__white: #fff;
+    --color__black: #000;
+    --color__primary:#0e90cc;
+    --color__secondary: #8c00ff;
+	--color__red: #b70404;
+    --color__green: #81c469;
+    --color__gray: #636363;
+	--color__gray-darkest: #090909;
+    --color__gray-dark: #333;
+    --color__gray-light: #909090;
+    --color__gray-lighter: #f6f6f6;
+    --color__link: var( --color__primary );
+    --color__link-alt: var( --color__gray-dark );
+    --color__link-hover: darken( var( --color__link ), 15% );
+    --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
+    --color__placeholder: var( --color__gray );
+    --color__background: #f6f6f6;
+	--color__background-field: #909090;
+    --color__background-button: #f0f0f0;
+    --color__background-button-hover: var( --color__background-field );
+    --color__button-hover: var( --color__white );
+    /* --color__background-button: #f0f0f0; */
+    --color__border: #f6f6f6;
+    --color__border-alt: #909090;
+    --font__caslon: Adobe-Caslon, 'Adobe Caslon', serif;
+    --font__avenir: Avenir-Next-Thin, sans-serif;
+    --font__franklin-gothic: franklin-gothic, 'Franklin Gothic', sans-serif;
+    --font__proxy: proxy-nova, 'Proxima Nova', sans-serif;
+    --font__savoy: savoy, sans-serif;
+    --font__serif: var( --font__caslon );
+    --font__sans: var( --font__avenir );
+    --font__body: var( --font__sans );
+    --font__heading: var( --font__serif );
+    --font__heading-alt: var( --font__sans );
+	--width__content-wide: 1450px;
+    --width__content: 920px;
+    --width__content-narrow: 740px;
+    --font-size__content: 18px;
+
+    --primary-color: var( --color__gray );
+    --secondary-color: var( --color__primary );
+    --error-color: var( --color__red );
+    --success-color: var( --color__green );
+    --form-base-color: var( --color__black );
+}
+
+*, *:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: Avenir-Next-Thin;
+    src: url(../font/avenir-next-thin.ttf);
+}
+@font-face {
+    font-family: franklin-gothic;
+    src: url(../font/franklin-gothic.ttf);
+}
+@font-face {
+    font-family: Adobe-Caslon;
+    src: url(../font/adobe/ACaslonPro-Regular.otf);
+}
+@font-face {
+    font-family: proxy-nova;
+    src: url(../font/proxy/proxy.ttf);
+}
+@font-face {
+    font-family: savoy;
+    src: url(../font/savoy.ttf);
+}
+@font-face {
+    font-family: savoy-bold;
+    src: url(../font/savoy-bold.ttf);
+}
+
+
+/************************************************/
+
+/* Main column width */
+.wp-block {
+    max-width: var( --width__content );
+}
+ 
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+ 
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+
+.editor-styles-wrapper h2 {
+  font-family: var( --font__serif );
+}
+
+.editor-styles-wrapper h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.wp-block-column h3,
+.wp-block-group h3 {
+    font-size: 1.5rem;
+}
+
+.wp-block-media-text h2 {
+    font-family: var( --font__proxima );
+    font-weight: bold;
+}
+
+.has-white-color * {
+    color: var( --color__white );
+}
+
+
+.wp-block-column h2:first-of-type,
+.wp-block-column h3:first-of-type {
+   margin-top: 0;
+}
+
+.wp-block-column .wp-block-button {
+    width: 100%;
+}
+
+.wp-block-column .wp-block-button__link {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.wp-block-columns .has-background,
+.wp-block-column.has-background,
+.pricing-group .wp-block-column  {
+    padding: 2rem;
+}
+
+.has-grey-lighter-background-color {
+    background-color: var( --color__gray-lighter ) !important;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: .25rem;
+    list-style-type: '-';
+}
+
+ul > li {
+	font-size: var( --font-size__content );
+	line-height: 1.2;
+	margin-bottom: .5rem;
+	padding-left: .5rem;
+}
+
+ul > li::marker {
+	color: var( --color__background-field );
+	content: '-';
+}
+
+.lead {
+	margin-bottom: 3rem;
+	font-size: 1.375rem;
+    font-weight: 700;
+}
+
+@media screen and ( max-width: 600px ) {
+	.lead {
+		margin-bottom: 2rem;
+		font-size: 1.25rem;
+	}
+}
+
+.has-drop-cap:first-letter,
+p.has-drop-cap:not(:focus)::first-letter {
+	font-family: var( --serif );
+    font-size: 4.25rem !important;
+}
+
+.has-drop-cap.lead::first-letter,
+p.has-drop-cap.lead:not(:focus)::first-letter {
+    font-size: 5.4rem !important;
+}
+
+.has-drop-cap:after {
+	clear: both;
+}
