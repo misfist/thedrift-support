@@ -17,16 +17,93 @@ Description: Used to style the TinyMCE editor.
  * 8.0 - RTL
  */
 
+ :root{
+    --color__white: #fff;
+    --color__black: #000;
+    --color__primary:#0e90cc;
+    --color__secondary: #8c00ff;
+	--color__red: #b70404;
+    --color__green: #81c469;
+    --color__gray: #636363;
+	--color__gray-darkest: #090909;
+    --color__gray-dark: #333;
+    --color__gray-light: #909090;
+    --color__gray-lighter: #f6f6f6;
+    --color__link: var( --color__primary );
+    --color__link-alt: var( --color__gray-dark );
+    --color__link-hover: darken( var( --color__link ), 15% );
+    --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
+    --color__placeholder: var( --color__gray );
+    --color__background: #f6f6f6;
+	--color__background-field: #909090;
+    --color__background-button: #f0f0f0;
+    --color__background-button-hover: var( --color__background-field );
+    --color__button-hover: var( --color__white );
+    /* --color__background-button: #f0f0f0; */
+    --color__border: #f6f6f6;
+    --color__border-alt: #909090;
+    --font__caslon: Adobe-Caslon, 'Adobe Caslon', serif;
+    --font__avenir: Avenir-Next-Thin, sans-serif;
+    --font__franklin-gothic: franklin-gothic, 'Franklin Gothic', sans-serif;
+    --font__proxy: proxy-nova, 'Proxima Nova', sans-serif;
+    --font__savoy: savoy, sans-serif;
+    --font__serif: var( --font__caslon );
+    --font__sans: var( --font__avenir );
+    --font__body: var( --font__sans );
+    --font__heading: var( --font__serif );
+    --font__heading-alt: var( --font__sans );
+	--width__content-wide: 1450px;
+    --width__content: 920px;
+    --width__content-narrow: 740px;
+    --font-size__content: 18px;
+
+    --primary-color: var( --color__gray );
+    --secondary-color: var( --color__primary );
+    --error-color: var( --color__red );
+    --success-color: var( --color__green );
+    --form-base-color: var( --color__black );
+}
+
+*, *:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: Avenir-Next-Thin;
+    src: url(../font/avenir-next-thin.ttf);
+}
+@font-face {
+    font-family: franklin-gothic;
+    src: url(../font/franklin-gothic.ttf);
+}
+@font-face {
+    font-family: Adobe-Caslon;
+    src: url(../font/adobe/ACaslonPro-Regular.otf);
+}
+@font-face {
+    font-family: proxy-nova;
+    src: url(../font/proxy/proxy.ttf);
+}
+@font-face {
+    font-family: savoy;
+    src: url(../font/savoy.ttf);
+}
+@font-face {
+    font-family: savoy-bold;
+    src: url(../font/savoy-bold.ttf);
+}
+
+
 /**
  * 1.0 - Body
  */
-
+/* 
 body {
 	background-color: #fff;
 	color: #333;
 	margin: 20px 40px;
 	max-width: 580px;
-}
+} */
 
 /**
  * 2.0 - Typography
@@ -37,7 +114,7 @@ button,
 input,
 select,
 textarea {
-	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	font-family: var( --font__franklin-gothic );
 	font-size: 16px;
 	font-size: 1rem;
 	font-weight: 400;
@@ -937,15 +1014,6 @@ html[lang="th"] .edit-post-visual-editor * {
 2.0 General Block Settings
 --------------------------------------------------------------*/
 
-/* Main column width */
-
-.editor-styles-wrapper {
-	max-width: 100% !important; /* Override where editor-style.css is affecting this. */
-}
-
-.wp-block {
-	max-width: 674px; /* Based on one-column post width; 644px + 30px to account for padding. */
-}
 
 /* Alignments */
 
@@ -1393,86 +1461,13 @@ table.wp-block-table td:last-child {
 	margin-right: 0;
 }
 
-:root{
-    --color__white: #fff;
-    --color__black: #000;
-    --color__primary:#0e90cc;
-    --color__secondary: #8c00ff;
-	--color__red: #b70404;
-    --color__green: #81c469;
-    --color__gray: #636363;
-	--color__gray-darkest: #090909;
-    --color__gray-dark: #333;
-    --color__gray-light: #909090;
-    --color__gray-lighter: #f6f6f6;
-    --color__link: var( --color__primary );
-    --color__link-alt: var( --color__gray-dark );
-    --color__link-hover: darken( var( --color__link ), 15% );
-    --color__link-hover-alt: lighten( var( --color__link-alt ), 15% );
-    --color__placeholder: var( --color__gray );
-    --color__background: #f6f6f6;
-	--color__background-field: #909090;
-    --color__background-button: #f0f0f0;
-    --color__background-button-hover: var( --color__background-field );
-    --color__button-hover: var( --color__white );
-    /* --color__background-button: #f0f0f0; */
-    --color__border: #f6f6f6;
-    --color__border-alt: #909090;
-    --font__caslon: Adobe-Caslon, 'Adobe Caslon', serif;
-    --font__avenir: Avenir-Next-Thin, sans-serif;
-    --font__franklin-gothic: franklin-gothic, 'Franklin Gothic', sans-serif;
-    --font__proxy: proxy-nova, 'Proxima Nova', sans-serif;
-    --font__savoy: savoy, sans-serif;
-    --font__serif: var( --font__caslon );
-    --font__sans: var( --font__avenir );
-    --font__body: var( --font__sans );
-    --font__heading: var( --font__serif );
-    --font__heading-alt: var( --font__sans );
-	--width__content-wide: 1450px;
-    --width__content: 920px;
-    --width__content-narrow: 740px;
-    --font-size__content: 18px;
-
-    --primary-color: var( --color__gray );
-    --secondary-color: var( --color__primary );
-    --error-color: var( --color__red );
-    --success-color: var( --color__green );
-    --form-base-color: var( --color__black );
-}
-
-*, *:focus {
-    outline: none;
-}
-
-@font-face {
-    font-family: Avenir-Next-Thin;
-    src: url(../font/avenir-next-thin.ttf);
-}
-@font-face {
-    font-family: franklin-gothic;
-    src: url(../font/franklin-gothic.ttf);
-}
-@font-face {
-    font-family: Adobe-Caslon;
-    src: url(../font/adobe/ACaslonPro-Regular.otf);
-}
-@font-face {
-    font-family: proxy-nova;
-    src: url(../font/proxy/proxy.ttf);
-}
-@font-face {
-    font-family: savoy;
-    src: url(../font/savoy.ttf);
-}
-@font-face {
-    font-family: savoy-bold;
-    src: url(../font/savoy-bold.ttf);
-}
-
 
 /************************************************/
 
 /* Main column width */
+.editor-styles-wrapper {
+	max-width: initial !important;
+}
 .wp-block {
     max-width: var( --width__content );
 }

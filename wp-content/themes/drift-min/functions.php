@@ -127,7 +127,7 @@ function twentyseventeen_setup() {
 	// Load default block styles.
 	add_theme_support( 'wp-block-styles' );
 
-	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/editor-style.css' );
+	add_editor_style( get_stylesheet_directory_uri() . '/assets/css/editor-blocks.css' );
 
 	add_theme_support( 'align-wide' );
 
