@@ -27,6 +27,7 @@
         if( 'inline_subscription' === formType ) {
             formatSubscriptions();
             modifyFieldLabels();
+            addDataAttributes();
         }
 
         if( 'inline_payment' === formType ) {
@@ -100,6 +101,25 @@
         if( guestInput ) {
             let guestLabel = guestInput.prev( 'label' ).text( guest );
         }
+    }
+
+    function addDataAttributes() {
+        const formGroups = $( '.wpfs-form-group' );
+        if( formGroups ) {
+            formGroups.each( function( index, value ) {
+                let dataLabel = $( this ).find( 'label' ).attr( 'for' );
+
+                if( dataLabel.includes( 'wpfs-custom-input' ) ) {
+                    dataLabel = $( this ).find( 'input' ).attr( 'data-wpfs-custom-input-label' );
+                }
+                $( this ).addClass( slugify( dataLabel ) );
+                
+            } );
+        }
+    }
+
+    function slugify( content ) {
+        return content.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
     }
 
 })( jQuery );
