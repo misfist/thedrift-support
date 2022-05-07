@@ -4514,6 +4514,8 @@ input[type="text"].wpfs-form-control,
 	--font-size__content: 18px;
     --width__content: 920px;
     --width__content-narrow: 740px;
+    --width__content-wide: 1140px;
+    --width__content-inner: calc( var( --width__content-wide ) - 30px );
 }
 
 .page .content-area {
@@ -4627,32 +4629,64 @@ input[type="text"].wpfs-form-control,
 }
 
 /* Content Width */
-.page.content-narrow .entry-content > *:not( .alignwide ),
-.page.content-narrow .entry-content > *:not( .alignfull ) {
+.page .entry-content {
+    max-width: var( --width__content );
     width: 100%;
-	max-width: var( --width__content-narrow );
-    margin-right: auto;
-    margin-left: auto;
+}
+.page.content-narrow .entry-content {
+    max-width: var( --width__content-narrow );
 }
 
 .entry-content .alignwide,
-.entry-content .alignfull,
-.page .entry-content > *.alignwide,
-.page .entry-content > *.alignfull {
+.entry-content .alignfull {
 	margin: 32px calc(50% - 50vw);
 	max-width: 100vw;
 	width: 100vw;
 }
 
+@media (min-width: 1110px) {
+    .entry-content .alignwide {
+        margin: 32px calc( ( var( --width__content ) - var( --width__content-inner ) ) / 2 );
+		max-width: var( --width__content-inner );
+		width: var( --width__content-inner );
+    }
+
+    .content-narrow .entry-content .alignwide {
+        margin: 32px calc( ( var( --width__content-narrow ) - var( --width__content-inner ) ) / 2 );
+		max-width: var( --width__content-inner );
+		width: var( --width__content-inner );
+    }
+}
+
+/* .page .entry-content > *:not( .alignwide ),
+.page .entry-content > *:not( .alignfull ) {
+    width: 100%;
+	max-width: var( --width__content );
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page.content-narrow .entry-content > *:not( .alignwide ),
+.page.content-narrow .entry-content > *:not( .alignfull ) {
+	max-width: var( --width__content-narrow );
+}
+
+
+
 @media (min-width: 920px) {
 	.entry-content .alignwide,
-    .page .entry-content > *.alignwide,
+    .page .entry-content > *.alignwide {
+        margin: 32px 0;
+		max-width: var( --width__content-inner );
+		width: var( --width__content-inner );
+	}
+
     .page.content-narrow .entry-content > *.alignwide {
 		margin: 32px calc( ( var( --width__content ) - var( --width__content-narrow ) ) / 2 );
 		max-width: var( --width__content );
 		width: var( --width__content );
 	}
-}
+} */
 
 .entry-content .wp-block-columns {}
 
