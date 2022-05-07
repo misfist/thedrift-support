@@ -5,16 +5,28 @@
      * Wrap desciption text in span tag so we can style as designed
      */
     const form = $( '.wpfs-form' );
+
     if( ! form ) {
         return;
     }
 
     const formType = form.data( 'wpfs-form-type' );
     const fieldNodes = $( '.wpfs-form-check-group .wpfs-form-check' );
+    const rsvpLabel = 'Will you join us at David Zwirner on June 23 to help us celebrate our second birthday? (Type "Yes" or "No.")';
+    const guestLabel = 'How many guests will you bring?';
 
     if( fieldNodes ) {
+        const forms = [
+            'basic',
+            'friend',
+            'supporter',
+            'sponsor',
+            'patron'
+        ];
+
         if( 'inline_subscription' === formType ) {
             formatSubscriptions();
+            modifyFieldLabels();
         }
 
         if( 'inline_payment' === formType ) {
@@ -73,6 +85,20 @@
         if( parent && field ) {
             parent.insertAdjacentHTML( 'beforeend', field.outerHTML );
             field.remove();
+        }
+    }
+
+    function modifyFieldLabels() {
+        const rsvpInput = $( form ).find( `[data-wpfs-custom-input-label="Celebrate"]` );
+        const guestInput = $( form ).find( `[data-wpfs-custom-input-label~="guests"]` );
+        const rsvp = ( wpFSData ) ? wpFSData.rsvpLabel : rsvpLabel;
+        const guest = ( wpFSData ) ? wpFSData.guestLabel : guestLabel;
+        if( rsvpInput ) {
+            let rsvpLabel = rsvpInput.prev( 'label' ).text( rsvp );
+        }
+
+        if( guestInput ) {
+            let guestLabel = guestInput.prev( 'label' ).text( guest );
         }
     }
 
