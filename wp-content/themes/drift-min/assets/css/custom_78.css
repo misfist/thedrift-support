@@ -23,17 +23,24 @@
     /* --color__background-button: #f0f0f0; */
     --color__border: #f6f6f6;
     --color__border-alt: #909090;
-    --font__caslon: Adobe-Caslon, serif;
+    --font__caslon: Adobe-Caslon, 'Adobe Caslon', serif;
     --font__avenir: Avenir-Next-Thin, sans-serif;
-    --font__franklin-gothic: franklin-gothic, sans-serif;
-    --font__proxy: proxy-nova, sans-serif;
-    --font__savoy: savoy, sans-serif;
+    --font__franklin-gothic: franklin-gothic, 'Franklin Gothic', 'Libre Franklin', sans-serif;
+    --font__proxy: proxy-nova, 'Proxima Nova', Montserrat, sans-serif;
+    --font__savoy: savoy, Savoy, var( --serif );
     --font__serif: var( --font__caslon );
     --font__sans: var( --font__avenir );
     --font__body: var( --font__sans );
     --font__heading: var( --font__serif );
     --font__heading-alt: var( --font__sans );
-	--width__content-wide: 1450px;
+
+    --font-size__content: 18px;
+
+	/* --width__content-wide: 1450px; */
+    --width__content-wide: 1140px;
+    --width__content: 920px;
+    --width__content-narrow: 740px;
+    --width__content-inner: calc( var( --width__content-wide ) - 30px );
 
     --primary-color: var( --color__gray );
     --secondary-color: var( --color__primary );
@@ -4502,21 +4509,7 @@ input[type="text"].wpfs-form-control,
 
 /************************************************/
 
-:root {
-	--serif: 'Adobe Caslon', Lusitana, serif;
-	--sans-serif: Avenir-Next-Thin, sans-serif;
-	--font__franklin-gothic: 'Franklin Gothic', 'Libre Franklin', sans-serif;
-	--font__proxima: 'Proxima Nova', Montserrat, sans-serif;
-	--font__savoy: Savoy, var( --serif );
-	--color__black: #000;
-	--color__primary: #0e90cc;
-	--color__background: #f6f6f6;
-	--font-size__content: 18px;
-    --width__content: 920px;
-    --width__content-narrow: 740px;
-    --width__content-wide: 1140px;
-    --width__content-inner: calc( var( --width__content-wide ) - 30px );
-}
+
 
 .page .content-area {
 	max-width: 1400px;
@@ -4657,36 +4650,6 @@ input[type="text"].wpfs-form-control,
 		width: var( --width__content-inner );
     }
 }
-
-/* .page .entry-content > *:not( .alignwide ),
-.page .entry-content > *:not( .alignfull ) {
-    width: 100%;
-	max-width: var( --width__content );
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.page.content-narrow .entry-content > *:not( .alignwide ),
-.page.content-narrow .entry-content > *:not( .alignfull ) {
-	max-width: var( --width__content-narrow );
-}
-
-
-
-@media (min-width: 920px) {
-	.entry-content .alignwide,
-    .page .entry-content > *.alignwide {
-        margin: 32px 0;
-		max-width: var( --width__content-inner );
-		width: var( --width__content-inner );
-	}
-
-    .page.content-narrow .entry-content > *.alignwide {
-		margin: 32px calc( ( var( --width__content ) - var( --width__content-narrow ) ) / 2 );
-		max-width: var( --width__content );
-		width: var( --width__content );
-	}
-} */
 
 .entry-content .wp-block-columns {}
 
