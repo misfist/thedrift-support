@@ -419,7 +419,7 @@ function twentyseventeen_block_editor_styles() {
 	// Add custom fonts.
 	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 }
-add_action( 'enqueue_block_editor_assets', 'twentyseventeen_block_editor_styles' );
+// add_action( 'enqueue_block_editor_assets', 'twentyseventeen_block_editor_styles' );
 
 /**
  * Add custom image sizes attribute to enhance responsive image functionality
