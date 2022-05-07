@@ -4731,6 +4731,107 @@ p.has-drop-cap.lead:not(:focus)::first-letter {
 	clear: both;
 }
 
+.wpfs-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wpfs-form .wpfs-form-group,
+.wpfs-form .wpfs-form-actions {
+    width: 100%;
+    max-width: 480px;
+}
+
+/* Coupon - 1 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:first-of-type,
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:first-of-type,
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:first-of-type,
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:first-of-type {
+    order: 1;
+}
+
+/* Email - 4 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(4),
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(4),
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(4),
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(4) {
+    order: 2;
+}
+
+/* Name - 5 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(5),
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(5),
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(5),
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(5) {
+    order: 3;
+}
+
+/* Card - 6 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(6),
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(6),
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(6),
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(6) {
+    order: 4;
+}
+
+/* Celebrate - 2 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(2),
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(2),
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(2),
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(2) {
+    order: 5;
+}
+
+/* Guest - 3 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(3),
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(3),
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(3),
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(3) {
+    order: 6;
+}
+
+/* Submit - 7 */
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-actions,
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-actions,
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-actions,
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-actions {
+    order: 7;
+}
+
+/* Basic - No Guests Field */
+
+/* Email - 3 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(3) {
+    order: 1;
+}
+
+/* Coupon - 1 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-groupp:first-of-type {
+    order: 2;
+}
+
+/* Name - 4 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(4) {
+    order: 3;
+}
+
+/* Card - 5 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(5) {
+    order: 4;
+}
+
+/* Celebrate - 2 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(2) {
+    order: 5;
+}
+
+/* Submit - 6 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-actions {
+    order: 6;
+}
+
+
+
 .wpfs-form .wpfs-coupon-to-redeem-row,
 .wpfs-form .wpfs-form-card {
 	border-radius: 0;
