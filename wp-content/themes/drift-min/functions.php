@@ -129,6 +129,49 @@ function twentyseventeen_setup() {
 
 	add_theme_support( 'align-wide' );
 
+	add_theme_support( 'editor-color-palette', array(
+        array(
+            'name'  => esc_attr__( 'Primary', 'drift' ),
+            'slug'  => 'primary',
+            'color' => '#0e90cc',
+        ),
+        array(
+            'name'  => esc_attr__( 'Light Gray', 'drift' ),
+            'slug'  => 'grey-light',
+            'color' => '#ebe7dc',
+        ),
+        array(
+            'name'  => esc_attr__( 'Lighter Gray', 'drift' ),
+            'slug'  => 'grey-lighter',
+            'color' => '#f6f6f6',
+        ),
+        array(
+            'name'  => esc_attr__( 'Gray', 'drift' ),
+            'slug'  => 'grey',
+            'color' => '#777',
+        ),
+		array(
+            'name'  => esc_attr__( 'Dark Gray', 'drift' ),
+            'slug'  => 'grey-dark',
+            'color' => '#434343',
+        ),
+        array(
+            'name'  => esc_attr__( 'Darker Gray', 'drift' ),
+            'slug'  => 'grey-darker',
+            'color' => '#343434',
+        ),
+        array(
+            'name'  => esc_attr__( 'Black', 'drift' ),
+            'slug'  => 'black',
+            'color' => '#000',
+        ),
+        array(
+            'name'  => esc_attr__( 'White', 'drift' ),
+            'slug'  => 'white',
+            'color' => '#fff',
+        ),
+    ) );
+
 	// Add support for responsive embeds.
 	add_theme_support( 'responsive-embeds' );
 }
