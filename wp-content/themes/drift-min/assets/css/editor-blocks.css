@@ -807,10 +807,6 @@ table.wp-block-table td:last-child {
 	margin-right: 0;
 }
 
-
-
-
-
 :root{
     --color__white: #fff;
     --color__black: #000;
@@ -935,7 +931,8 @@ table.wp-block-table td:last-child {
     text-transform: uppercase;
 }
 
-.wp-block-columns .has-background {
+.wp-block-columns .has-background,
+.wp-block-column.has-background  {
     padding: 2rem;
 }
 
