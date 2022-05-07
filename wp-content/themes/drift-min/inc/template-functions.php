@@ -24,6 +24,10 @@ function twentyseventeen_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+	if ( is_page_template( array( 'page-templates/page-narrow.php' ) ) ) {
+		$classes[] = 'content-narrow';
+	}
+
 	// Add class if we're viewing the Customizer for easier styling of theme options.
 	if ( is_customize_preview() ) {
 		$classes[] = 'twentyseventeen-customizer';
