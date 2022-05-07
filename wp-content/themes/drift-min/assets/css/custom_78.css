@@ -4742,95 +4742,92 @@ p.has-drop-cap.lead:not(:focus)::first-letter {
     max-width: 480px;
 }
 
-/* Coupon - 1 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:first-of-type,
-.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:first-of-type,
-.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:first-of-type,
-.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:first-of-type {
+/* Email - 2 */
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group[class*="email"],
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group[class*="email"],
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group[class*="email"] {
     order: 1;
 }
 
-/* Email - 4 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(4),
-.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(4),
-.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(4),
-.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(4) {
+/* Name - 4 */
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group[class*="card-holder-name"],
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group[class*="card-holder-name"],
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group[class*="card-holder-name"] {
     order: 2;
 }
 
-/* Name - 5 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(5),
-.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(5),
-.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(5),
-.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(5) {
+/* Card - 5 */
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group[class*="cardnumber"],
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group[class*="cardnumber"],
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group[class*="cardnumber"] {
     order: 3;
 }
 
-/* Card - 6 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(6),
-.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(6),
-.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(6),
-.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(6) {
+/* Coupon - 3 */
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group.coupon,
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group.coupon,
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group.coupon {
     order: 4;
 }
 
-/* Celebrate - 2 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(2),
-.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(2),
-.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(2),
-.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(2) {
+/* RSVP - 2 */
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group[class*="rsvp"],
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group[class*="rsvp"],
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group[class*="rsvp"] {
     order: 5;
 }
 
-/* Guest - 3 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group:nth-of-type(3),
-.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group:nth-of-type(3),
-.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group:nth-of-type(3),
-.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group:nth-of-type(3) {
+/* Guest - 2 */
+.wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-group[class*="guest"],
+.wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-group[class*="guest"],
+.wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-group[class*="guest"] {
     order: 6;
 }
 
 /* Submit - 7 */
-.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-actions,
 .wpfs-form[data-wpfs-form-id="supporter"] .wpfs-form-actions,
 .wpfs-form[data-wpfs-form-id="sponsor"] .wpfs-form-actions,
 .wpfs-form[data-wpfs-form-id="patron"] .wpfs-form-actions {
     order: 7;
 }
 
-/* Basic - No Guests Field */
+/* Basic & Friend - No Guests Field */
 
-/* Email - 3 */
-.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(3) {
+/* Email - 2 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group[class*="email"],
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group[class*="email"] {
     order: 1;
 }
 
-/* Coupon - 1 */
-.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-groupp:first-of-type {
+/* Name - 4 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group[class*="card-holder-name"],
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group[class*="card-holder-name"] {
     order: 2;
 }
 
-/* Name - 4 */
-.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(4) {
+/* Card - 5 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group[class*="cardnumber"],
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group[class*="cardnumber"] {
     order: 3;
 }
 
-/* Card - 5 */
-.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(5) {
+/* Coupon - 3 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group.coupon,
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group.coupon {
     order: 4;
 }
 
-/* Celebrate - 2 */
-.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group:nth-of-type(2) {
+/* RSVP - 2 */
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-group[class*="rsvp"],
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-group[class*="rsvp"] {
     order: 5;
 }
 
 /* Submit - 6 */
-.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-actions {
+.wpfs-form[data-wpfs-form-id="basic"] .wpfs-form-actions,
+.wpfs-form[data-wpfs-form-id="friend"] .wpfs-form-actions {
     order: 6;
 }
-
-
 
 .wpfs-form .wpfs-coupon-to-redeem-row,
 .wpfs-form .wpfs-form-card {
