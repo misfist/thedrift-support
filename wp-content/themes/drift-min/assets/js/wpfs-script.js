@@ -89,7 +89,7 @@
     }
 
     function modifyFieldLabels() {
-        const rsvpInput = $( form ).find( `[data-wpfs-custom-input-label="Celebrate"]` );
+        const rsvpInput = $( form ).find( `[data-wpfs-custom-input-label="rsvp"]` );
         const guestInput = $( form ).find( `[data-wpfs-custom-input-label~="guests"]` );
         const rsvp = ( wpFSData ) ? wpFSData.rsvpLabel : rsvpLabel;
         const guest = ( wpFSData ) ? wpFSData.guestLabel : guestLabel;
