@@ -4596,7 +4596,6 @@ input[type="text"].wpfs-form-control,
 .page .entry-content h3,
 .page .page-content h3 {
     font-size: 1rem;
-    font-weight: bold;
     text-transform: uppercase;
     padding-top: 0;
     padding-bottom: 0;
@@ -4604,20 +4603,26 @@ input[type="text"].wpfs-form-control,
     margin-bottom: .75rem;
 }
 
-.page div[class^="wp-elements"] h3 {
+.page .entry-content h3 strong,
+.page .page-content h3 strong {
+    font-weight: normal;
+}
+
+.page .wp-block-column h3 {
+    font-family: var( --font__proxy );
     font-size: 1.5rem;
 }
 
-.page div[class^="wp-elements"].wp-block-media-text h2 {
+.page .wp-block-media-text h2 {
     font-family: var( --font__proxima );
     font-weight: bold;
 }
 
-.page div[class^="wp-elements"] ul > li {
+.page .wp-block-column ul > li {
     font-size: 1rem;
 }
 
-.page div[class^="wp-elements"].has-white-color * {
+.page .wp-block-column.has-white-color * {
     color: var( --color__white );
 }
 
