@@ -18,18 +18,10 @@
 get_header(); ?>
 
 <div class="wrap">
-	<?php if ( is_home() && ! is_front_page() ) : ?>
-		<header class="page-header">
-			<h1 class="page-title"><?php single_post_title(); ?></h1>
-		</header>
-	<?php else : ?>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
-	</header>
-	<?php endif; ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<main id="main" class="main-content" role="main">
+		<div class="container main_container_custom">
+
 			<?php do_action( 'drift_after_main_container' ); ?>
 
 			<?php
@@ -51,9 +43,9 @@ get_header(); ?>
 
 				the_posts_pagination(
 					array(
-						'prev_text'          => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-						'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+						'prev_text'          => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'drift' ) . '</span>',
+						'next_text'          => '<span class="screen-reader-text">' . __( 'Next page', 'drift' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'drift' ) . ' </span>',
 					)
 				);
 
@@ -64,9 +56,9 @@ get_header(); ?>
 			endif;
 			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
+		</div><!-- .container -->
+	</main><!-- .main-content -->
+
 </div><!-- .wrap -->
 
 <?php
