@@ -4509,8 +4509,6 @@ input[type="text"].wpfs-form-control,
 
 /************************************************/
 
-
-
 .page .content-area {
 	max-width: 1400px;
 	margin-right: auto;
@@ -4642,7 +4640,7 @@ input[type="text"].wpfs-form-control,
 	width: 100vw;
 }
 
-@media (min-width: 1110px) {
+@media screen and (min-width: 1110px) {
     .entry-content .alignwide {
         margin: 32px calc( ( var( --width__content ) - var( --width__content-inner ) ) / 2 );
 		max-width: var( --width__content-inner );
@@ -4655,6 +4653,14 @@ input[type="text"].wpfs-form-control,
 		width: var( --width__content-inner );
     }
 }
+
+@media screen and (max-width: 1140px) {
+    .entry-content .alignwide {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
 
 .entry-content .wp-block-columns {}
 
