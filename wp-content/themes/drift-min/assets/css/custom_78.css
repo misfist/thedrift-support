@@ -27,7 +27,7 @@
     --font__avenir: Avenir-Next-Thin, sans-serif;
     --font__franklin-gothic: franklin-gothic, 'Franklin Gothic', 'Libre Franklin', sans-serif;
     --font__proxy: proxy-nova, 'Proxima Nova', Montserrat, sans-serif;
-    --font__savoy: savoy, Savoy, var( --serif );
+    --font__savoy: savoy, Savoy, var( --font__serif );
     --font__serif: var( --font__caslon );
     --font__sans: var( --font__avenir );
     --font__body: var( --font__sans );
@@ -4523,7 +4523,7 @@ input[type="text"].wpfs-form-control,
 
 .page .entry-title,
 .page .page-title {
-	font-family: var( --serif );
+	font-family: var( --font__serif );
 	border-bottom: 1px solid var( --color__black );
 	margin-bottom: 1.5rem;
 	padding-bottom: 1.5rem;
@@ -4718,14 +4718,10 @@ input[type="text"].wpfs-form-control,
 
 .has-drop-cap:first-letter,
 p.has-drop-cap:not(:focus)::first-letter {
-	font-family: var( --serif );
+	font-family: var( --font__serif );
     font-size: 4.25rem !important;
 }
 
-.has-drop-cap.lead::first-letter,
-p.has-drop-cap.lead:not(:focus)::first-letter {
-    font-size: 5.4rem !important;
-}
 
 .has-drop-cap:after {
 	clear: both;
