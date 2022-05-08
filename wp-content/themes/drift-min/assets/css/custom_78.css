@@ -4719,7 +4719,7 @@ input[type="text"].wpfs-form-control,
 .has-drop-cap:first-letter,
 p.has-drop-cap:not(:focus)::first-letter {
 	font-family: var( --font__serif );
-    font-size: 4.25rem !important;
+    font-size: 5.25rem !important;
 }
 
 
