@@ -4863,6 +4863,10 @@ p.has-drop-cap:not(:focus)::first-letter {
 	opacity: 0;
 }
 
+.wpfs-form-message--incorrect {
+    background-color: var( --color__green );
+}
+
 @media screen and ( max-width: 1024px ) {
 	.wp-block-column .wpfs-form {
 		max-width: 100% !important;
