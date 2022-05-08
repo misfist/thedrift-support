@@ -18,6 +18,8 @@ get_header(); ?>
 <main id="main" class="main-content" role="main">
 	<div class="container main_container_custom">
 
+		<?php do_action( 'drift_after_main_container' ); ?>
+
 		<?php
 		while ( have_posts() ) :
 			the_post();
