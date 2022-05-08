@@ -4872,3 +4872,29 @@ p.has-drop-cap:not(:focus)::first-letter {
 		max-width: 100% !important;
 	}
 }
+
+/* Breadcrumbs */
+.fbc-page {
+    margin-bottom: 1.5rem;
+}
+
+.fbc-page .fbc-wrap {}
+
+.fbc-page .fbc-wrap .fbc-items {
+    background-color: initial;
+    font-family: var( --font__proxy );
+}
+
+.fbc-page .fbc-wrap .fbc-items li {
+    padding-top: 0;
+    padding-bottom: 0;
+    color: var( --color__gray-dark );
+}
+
+.fbc-page .fbc-wrap .fbc-items li:first-child {
+    padding-left: 0;
+}
+
+.fbc-page .fbc-wrap .fbc-items li a {
+    color: var( --color__gray-dark );
+}

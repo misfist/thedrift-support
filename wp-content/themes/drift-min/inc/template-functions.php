@@ -76,6 +76,18 @@ function twentyseventeen_body_classes( $classes ) {
 add_filter( 'body_class', 'twentyseventeen_body_classes' );
 
 /**
+ * Add Breadcrumbs
+ * 
+ * @since 2.5
+ *
+ * @return void
+ */
+function drift_add_breadcrumbs() {
+	echo do_shortcode( '[flexy_breadcrumb]' );
+}
+add_action( 'drift_after_main_container', 'drift_add_breadcrumbs' );
+
+/**
  * Modify Title
  * 
  * @link https://developer.wordpress.org/reference/hooks/the_title/
