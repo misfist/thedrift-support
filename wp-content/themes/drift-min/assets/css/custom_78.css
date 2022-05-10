@@ -8,9 +8,10 @@
 	--color__red: #b70404;
     --color__green: #81c469;
     --color__gray: #636363;
-	--color__gray-darkest: #090909;
+	--color__gray-darker: #090909;
+    --color__gray-darkest: var( --color__gray-darker );
     --color__gray-dark: #333;
-    --color__gray-light: #909090;
+    --color__gray-light: #bbb;
     --color__gray-lighter: #f6f6f6;
     --color__link: var( --color__primary );
     --color__link-alt: var( --color__gray-dark );
