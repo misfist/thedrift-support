@@ -4560,6 +4560,14 @@ input[type="text"].wpfs-form-control,
     .page .content-area .wp-block-column:last-child {
 		order: 1;
 	}
+
+    .pricing-group .wp-block-column {
+        margin-bottom: 1rem;
+    }
+
+    .pricing-group + .pricing-group {
+        margin-bottom: 0;
+    }
 }
 
 .post-title {
