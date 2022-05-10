@@ -946,9 +946,7 @@ table.wp-block-table td:last-child {
     text-transform: uppercase;
 }
 
-.wp-block-columns .has-background,
-.wp-block-column.has-background,
-.pricing-group .wp-block-column  {
+.has-background:not(.wp-block-button__link) {
     padding: 2rem;
 }
 
