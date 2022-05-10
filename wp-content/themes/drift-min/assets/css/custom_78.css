@@ -5041,7 +5041,7 @@ p.has-drop-cap:not(:focus)::first-letter {
 }
 
 .wpfs-form-message--incorrect {
-    background-color: var( --color__red );
+    background-color: var( --color__red ) !important;
     color: var( --color__white );
 }
 
