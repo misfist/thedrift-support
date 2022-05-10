@@ -870,7 +870,8 @@ section.footer_outer .container-fluid {
     border: 2px solid var( --color__black );
 }
 /*FORM*/
-.wpfs-form-control:not(.wpfs-form-control--error).wpfs-form-control--focus, .wpfs-form-control:not(.wpfs-form-control--error):focus {
+.wpfs-form-control:not(.wpfs-form-control--error).wpfs-form-control--focus, 
+.wpfs-form-control:not(.wpfs-form-control--error):focus {
     border-color: var(--secondary-color);
     box-shadow: 0px 0px 0px 1px var(--color__black) !important;
 }
@@ -884,7 +885,8 @@ section.footer_outer .container-fluid {
    /* === ADDED 6.3 === */
     position: relative;
 }
-.wpfs-form-control:not(.wpfs-form-control--error).wpfs-form-control--focus, .wpfs-form-control:not(.wpfs-form-control--error):focus {
+.wpfs-form-control:not(.wpfs-form-control--error).wpfs-form-control--focus, 
+.wpfs-form-control:not(.wpfs-form-control--error):focus {
     border-color: var(--secondary-color);
     box-shadow: 0px 0px 0px 1px var(--color__black) !important;
 }
@@ -4722,6 +4724,10 @@ input[type="text"].wpfs-form-control,
     gap: 1rem;
 }
 
+.image-text .wp-block-image img {
+    max-height: 800px;
+}
+
 @media screen and ( min-width: 768px ) {
     .image-text .wp-block-column:last-child {
         grid-template-columns: repeat( 2, 1fr );
@@ -4735,9 +4741,7 @@ input[type="text"].wpfs-form-control,
         height: 100%;
     }
 
-    .image-text .wp-block-column:last-child .wp-block-buttons {
-        /* padding-top: 10rem; */
-    }
+    .image-text .wp-block-column:last-child .wp-block-buttons {}
 }
 
 @media screen and ( min-width: 1050px ) {
@@ -5037,8 +5041,17 @@ p.has-drop-cap:not(:focus)::first-letter {
 }
 
 .wpfs-form-message--incorrect {
-    background-color: var( --color__green );
+    background-color: var( --color__red );
 }
+
+.wpfs-form-message {
+    background-color: var( --color__primary );
+}
+
+.wpfs-form-message--error {
+    color: var( --color__red );
+}
+
 
 @media screen and ( max-width: 1024px ) {
 	.wp-block-column .wpfs-form {
