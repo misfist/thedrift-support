@@ -1000,29 +1000,30 @@ p.has-drop-cap.lead:not(:focus)::first-letter {
 	clear: both;
 }
 
-.pricing-group {
+.wp-block-columns.pricing-group {
     display: grid;
     grid-template-columns: repeat( 1, 1fr );
     gap: 1rem;
 }
 
-.pricing-group .wp-block-column {
-    margin-left: 0 !important;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-}
 
 @media screen and ( min-width: 768px ) {
-    .pricing-group {
+    .wp-block-columns.pricing-group {
         grid-template-columns: repeat( 2, 1fr );
         gap: 1.5rem;
     }
 }
 
 @media screen and ( min-width: 1140px ) {
-    .pricing-group {
+    .wp-block-columns.pricing-group {
         grid-template-columns: repeat( 3, 1fr );
         gap: 2rem;
     }
+}
+
+.wp-block-columns.pricing-group .wp-block-column {
+    margin-left: 0 !important;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
