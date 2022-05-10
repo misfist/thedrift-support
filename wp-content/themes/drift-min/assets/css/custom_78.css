@@ -5042,11 +5042,17 @@ p.has-drop-cap:not(:focus)::first-letter {
 
 .wpfs-form-message--incorrect {
     background-color: var( --color__red );
+    color: var( --color__white );
 }
 
-.wpfs-form-message {
-    background-color: var( --color__primary );
+.wpfs-form-message--success {
+    background-color: var( --color__green );
+    color: var( --color__white );
 }
+
+/* .wpfs-form-message {
+    background-color: var( --color__primary );
+} */
 
 .wpfs-form-message--error {
     color: var( --color__red );
