@@ -4677,7 +4677,7 @@ input[type="text"].wpfs-form-control,
 .pricing-group .wp-block-column {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .entry-content .wp-block-column h2:first-of-type,
