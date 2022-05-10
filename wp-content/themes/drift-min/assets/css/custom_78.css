@@ -4664,8 +4664,13 @@ input[type="text"].wpfs-form-control,
     }
 }
 
-
 .entry-content .wp-block-columns {}
+
+.pricing-group .wp-block-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .entry-content .wp-block-column h2:first-of-type,
 .entry-content .wp-block-column h3:first-of-type {
