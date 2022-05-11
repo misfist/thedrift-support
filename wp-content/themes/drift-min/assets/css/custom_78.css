@@ -5109,3 +5109,7 @@ p.has-drop-cap:not(:focus)::first-letter {
 .fbc-page .fbc-wrap .fbc-items li a {
     color: var( --color__gray-dark );
 }
+
+.fbc-items .fa-home {
+    display: none;
+}
