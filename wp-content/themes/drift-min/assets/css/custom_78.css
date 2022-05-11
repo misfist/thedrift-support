@@ -5027,6 +5027,14 @@ p.has-drop-cap:not(:focus)::first-letter {
     order: 6;
 }
 
+div[id*="address-panel"],
+div[id*="address-panel"] .wpfs-form-group,
+.wpfs-form .wpfs-form-group, 
+.wpfs-form .wpfs-form-actions {
+    max-width: initial;
+    width: 100%;
+}
+
 .wpfs-form .wpfs-coupon-to-redeem-row,
 .wpfs-form .wpfs-form-card {
 	border-radius: 0;
