@@ -5081,8 +5081,9 @@ div[id*="address-panel"] .wpfs-form-group,
     background-color: var( --color__primary );
 } */
 
-.wpfs-form-message--error {
-    color: var( --color__red );
+.wpfs-form-message--error,
+.wpfs-form-error-message {
+    color: var( --color__red ) !important;
 }
 
 
