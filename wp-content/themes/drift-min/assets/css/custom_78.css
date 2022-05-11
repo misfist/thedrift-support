@@ -4895,6 +4895,16 @@ input[type="text"].wpfs-form-control,
 	color: var( --color__background-field );
 }
 
+@media screen and ( max-width: 600px ) {
+    .page-template-page-subscription-form .entry-content > .wp-block-columns .wp-block-column:first-of-type {
+        order: 2;
+    }
+
+    .page-template-page-subscription-form .entry-content > .wp-block-columns .wp-block-column:last-of-type {
+        order: 1;
+    }
+}
+
 .lead {
 	margin-bottom: 3rem;
 	font-size: 1.375rem;
