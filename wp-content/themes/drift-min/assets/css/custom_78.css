@@ -1272,8 +1272,10 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 .wpfs-form-actions{
     /* float: right !important; */
 }
+
 .wpfs-form-actions button.wpfs-btn, 
-.but63 {
+.but63,
+.is-style-outline .wp-block-button__link {
     /* float: right !important; */
     padding: 15px 30px !important;
     cursor: pointer !important;
@@ -1291,11 +1293,10 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
     box-shadow: none !important;
     border-radius: 9px !important;
 }
-.wpfs-form-actions button.wpfs-btn {
-    /* margin-right: 0 !important; */
-}
+
 .but62:hover, 
-.but63:hover{
+.but63:hover,
+.is-style-outline .wp-block-button__link:hover {
     color: var( --color__white ) !important;
     background: var( --color__black ) !important;
     border: 1px solid var( --color__black ) !important;
