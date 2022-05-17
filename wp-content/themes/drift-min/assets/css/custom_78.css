@@ -1517,6 +1517,18 @@ button.wpfs-btn-primary:focus {
     grid-column-end: 12 !important;
 }
 
+@media screen and ( max-width: 600px ) {
+    .gform_wrapper.gravity-theme .gfield.gfield_quantity {
+        grid-column-start: 1 !important;
+        grid-column-end: 6 !important;
+    }
+    
+    .gform_wrapper.gravity-theme .gfield.gfield_total {
+        grid-column-start: 7 !important;
+        grid-column-end: 12 !important;
+    }
+}
+
 .gform_wrapper.gravity-theme .ginput_total {
     color: var( --color__gray-darker ) !important;
 }
