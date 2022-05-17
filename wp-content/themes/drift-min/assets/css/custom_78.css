@@ -1275,7 +1275,9 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 
 .wpfs-form-actions button.wpfs-btn, 
 .but63,
-.is-style-outline .wp-block-button__link {
+.drift-button,
+.is-style-outline .wp-block-button__link,
+.gform_button[type="submit"] {
     /* float: right !important; */
     padding: 15px 30px !important;
     cursor: pointer !important;
@@ -1296,7 +1298,8 @@ ul.social_icons li i.fa, ul.social_icons li i.fab{
 
 .but62:hover, 
 .but63:hover,
-.is-style-outline .wp-block-button__link:hover {
+.is-style-outline .wp-block-button__link:hover,
+.gform_button[type="submit"]:hover {
     color: var( --color__white ) !important;
     background: var( --color__black ) !important;
     border: 1px solid var( --color__black ) !important;
@@ -1470,6 +1473,52 @@ button.wpfs-btn-primary:focus {
 	width: 14px !important;
 	height: 14px !important;
 	border: 0px;
+}
+
+.gform_wrapper label,
+.gform_wrapper span[class*="label"],
+.gform_wrapper .ginput_product_price,
+.gform_wrapper.gravity-theme .gfield_label {
+    font-family: var( --font__franklin-gothic );
+    font-size: 13px !important;
+}
+
+.gform_wrapper .ginput_quantity,
+.gform_wrapper input[type="number"] {
+    font-size: 15px;
+    line-height: normal;
+    border: 1px solid var( --color__border-alt );
+}
+
+.ginput_product_price_wrapper,
+.ginput_quantity_label,
+.gfield_quantity .instruction,
+.gfield_required_text {
+    visibility: hidden;
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
+
+.gfield_quantity,
+.gfield_total {}
+
+.gform_wrapper.gravity-theme .gfield.gfield_quantity {
+    grid-column-start: 1 !important;
+    grid-column-end: 4 !important;
+}
+
+.gform_wrapper.gravity-theme .gfield.gfield_total {
+    grid-column-start: 5 !important;
+    grid-column-end: 12 !important;
+}
+
+.gform_wrapper.gravity-theme .ginput_total {
+    color: var( --color__gray-darker ) !important;
 }
 
 /* radio button css*/
@@ -4480,14 +4529,14 @@ h1.issue_heading span {
 }
 
 .wpfs-btn {
---primary-bg-color: var( --color__background-button ) !important;
---primary-font-color: var( --color__black ) !important;
---primary-hover-focus-bg-color: var( --color__gray-darkest ) !important;
---primary-active-bg-color: var( --color__gray-dark ) !important;
---danger-bg-color: var( --error-color ) !important;
---danger-hover-focus-bg-color:  var( --error-color ) !important;
---danger-active-bg-color:  var( --error-color ) !important;
---outline-primary-hover-focus-border-color: var( --secondary-color ) !important;
+    --primary-bg-color: var( --color__background-button ) !important;
+    --primary-font-color: var( --color__black ) !important;
+    --primary-hover-focus-bg-color: var( --color__gray-darkest ) !important;
+    --primary-active-bg-color: var( --color__gray-dark ) !important;
+    --danger-bg-color: var( --error-color ) !important;
+    --danger-hover-focus-bg-color:  var( --error-color ) !important;
+    --danger-active-bg-color:  var( --error-color ) !important;
+    --outline-primary-hover-focus-border-color: var( --secondary-color ) !important;
 }
 
 .wpfs-form .wpfs-form-label {
@@ -4496,7 +4545,9 @@ h1.issue_heading span {
 
 input[type="email"].wpfs-form-control, 
 input[type="text"].wpfs-form-control, 
-.wpfs-form-select select {
+.wpfs-form-select select,
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="text"] {
     background-color: var( --color__border ) !important;
     border-color: var( --color__border ) !important;
     border-radius: 0 !important;
