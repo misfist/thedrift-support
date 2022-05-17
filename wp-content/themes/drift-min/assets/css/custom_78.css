@@ -1504,6 +1504,43 @@ button.wpfs-btn-primary:focus {
     width: 1px;
 }
 
+.gform_wrapper div[id^="gf_coupons_container"] {
+    border: 1px solid var( --color__border-alt );
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gform_wrapper div[id^="gf_coupons_container"] input[type="text"]{
+    width: 80% !important;
+}
+
+.gform_wrapper div[id^="gf_coupons_container"] input[type="button"] {
+    width: 15%;
+    cursor: pointer;
+}
+
+.gform_wrapper div[id^="gf_coupons_container"] input[type="text"],
+.gform_wrapper div[id^="gf_coupons_container"] input[type="button"] {
+    border: none;
+    background-color: transparent !important;
+}
+
+.gform_wrapper div[id^="gf_coupons_container"] input[type="button"] {
+    background-color: transparent;
+    font-family: var( --font__franklin-gothic );
+    font-size: 15px;
+    font-weight: bold;
+    color: var( --color__gray-darker );
+}
+
+.gform_wrapper #gf_coupon_info:empty,
+.gform_wrapper .gf_coupon_invalid {
+    margin: 0 !important;
+    width: 100%;
+}
+
 .gfield_quantity,
 .gfield_total {}
 
