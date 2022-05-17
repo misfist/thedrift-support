@@ -24,9 +24,7 @@ get_header(); ?>
 		while ( have_posts() ) :
 			the_post();
 
-			$post_type = get_post_type();
-
-			if ( 'page' === $post_type ) :
+			if ( 'page' === get_post_type() ) :
 				get_template_part( 'template-parts/page/content', get_post_type() );
 			else :
 				get_template_part( 'template-parts/post/content', get_post_type() );
