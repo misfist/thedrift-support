@@ -4553,6 +4553,12 @@ input[type="text"].wpfs-form-control,
     border-radius: 0 !important;
 }
 
+.gform_wrapper input[type="email"],
+.gform_wrapper input[type="text"] {
+    border-width: 1px;
+    border-style: solid;
+}
+
 .wpfs-button-group .wpfs-form-check-input:checked + .wpfs-btn-outline-primary {
     color: var( --color__button-hover ) !important;
     background-color:  var( --color__background-button-hover ) !important;
