@@ -101,6 +101,7 @@ function drift_the_title( $title, $post_id ) {
 	if( is_admin() || ! in_the_loop() ) {
 		return $title;
 	}
+	$title = str_replace( 'The Drift', '<em>The Drift</em>', $title );
 	if( ( $subtitle = get_post_meta( $post_id, 'post_subsitle', true ) ) || ( $subtitle = get_post_meta( $post_id, 'subtitle', true ) ) || ( $subtitle = get_post_meta( $post_id, 'current_issue_subtitle', true ) ) ) {
 		$title = sprintf( '<span class="post-title">%s</span> <span class="separator">|</span> <span class="post-subtitle">%s</span>', $title, $subtitle );
 	}
